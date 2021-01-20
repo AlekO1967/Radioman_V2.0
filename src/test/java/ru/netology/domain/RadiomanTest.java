@@ -57,10 +57,10 @@ class RadiomanTest {
 
     @Test
     public void setCurrentVolume() {
-        Radioman radioman = new Radioman(0, 100, 5);
-        //radioman.setCurrentVolume(5);
+        Radioman radioman = new Radioman();
+        radioman.setCurrentVolume(50);
 
-        assertEquals(5, radioman.getCurrentVolume());
+        assertEquals(50, radioman.getCurrentVolume());
     }
 
     @Test
@@ -111,9 +111,9 @@ class RadiomanTest {
 
     @Test
     public void setCurrentRadioStation() {
-        Radioman radioman = new Radioman(10, 9);
-
-        assertEquals(9, radioman.getCurrentRadioStation());
+        Radioman radioman = new Radioman();
+        radioman.setCurrentRadioStation(5);
+        assertEquals(5, radioman.getCurrentRadioStation());
     }
 
     @Test
